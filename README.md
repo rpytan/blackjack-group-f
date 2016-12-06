@@ -11,6 +11,7 @@ Product Design Document
 User Interface:
 Console-based text program with ASCII elements. 
 
+```
 
 Classes:
 	Main Class
@@ -48,9 +49,7 @@ Classes:
 			Public int numberOfChips: 
 		Methods
 			Player(): constructor of Player
-			Hit(): Ask yes/no question for user input if they would like to draw a card. Repeat until 		
-
-	player stands or goes bust
+			Hit(): Ask yes/no question for user input if they would like to draw a card. Repeat until player stands or goes bust
 			Bet(): Bet a certain amount (calls giveChips())
 			getValue(): Return combined point value of all chips
 	Dealer class extends Player
@@ -72,6 +71,8 @@ Classes:
 			round(): method that is called each round and	manages turns of players and the dealer.
 			Game(): Constructor method that gets the number of players and all their names.
 			winner(): determines winner after everyone goes (closest to 21 or if tie, decide who has the better hand)
+
+```
 
 Need:
 If there is a tie, which ranks are higher and amount of cards higher
