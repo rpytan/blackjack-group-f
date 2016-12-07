@@ -1,18 +1,19 @@
+import java.util.ArrayList;
+
 public class Hand { //constructor
 	
-	Card hand = new Card("","",1); //compilation from 
+	ArrayList<Card> hand = new ArrayList<Card>(); //compilation from 
 	int totalPV = 0;
 	
 	Hand() 
 	{
-		for(int x=0;x<hand.length;x++)
-			totalPV+=hand.getValue();
+		for(int x=0;x<hand.size();x++)
+			totalPV+=(hand.get(x).getValue());
 	}	
 	
-	public Card toString() //displays hand	
-	{ 
-		for(int x=0;x<hand.length;x++)
-			return hand;
+	public ArrayList<Card> display() //displays hand
+	{ 	
+		return hand;
 	}
 	
 	public int getTotalPoints()
