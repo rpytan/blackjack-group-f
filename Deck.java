@@ -23,4 +23,12 @@ public class Deck {
 		}
 	}
 	
+	/**
+	 * Moves the top card of the deck into the discard pile.
+	 */
+	public void discardCard() {
+		this.discard.add(this.cards.get(0));
+		this.cards.remove(0);
+	}
+	
 }
