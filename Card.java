@@ -3,8 +3,8 @@ package blackjackGroup;
 
 public class Card {
 
-	private static char[] suits = {'S', 'H', 'D', 'C'};
-	private static char[] ranks = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'X', 'J', 'Q', 'K', 'A'};
+	private static String[] suits = {"spades", "hearts", "diamonds", "clubs"};
+	private static String[] ranks = {"ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", 'jack', "queen", "king", "ace"};
 	private static int[] pointValues = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11};
 	
 	private int rank;
