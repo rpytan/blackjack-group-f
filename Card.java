@@ -32,7 +32,7 @@ public class Card {
 	}
 	
 	public int getValue() {
-		return pointVal;
+		return pointValues[pointVal];
 	}
 	
 	public String toString() {
