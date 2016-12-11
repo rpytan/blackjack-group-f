@@ -1,30 +1,30 @@
 public class Game
-  
+{  
   ArrayList<Player>Players = new ArrayList<Player>;
  
   New Dealer();
   
   New Deck();
   
-public static void round()
-{
-  boolean i = true;
-  while(i)
+  public static void round()
   {
-    for(int j = 0; j < (Players.size - 1); j++)
+    boolean i = true;
+    while(i)
     {
-    if(Players.get(j).hit = "Y")
-      i == false;
-    else()
-      i == true;
-    return i;
+      for(int j = 0; j < (Players.size - 1); j++)
+      {
+        if(Players.get(j).hit = "Y")
+          i = false;
+        else()
+          i = true;
+        return i;
+      }
+      if (i == false)
+        System.out.println(“The round is over”);
+    }
   }
-   if (i == false)
-    System.out.println(“The round is over”);
-}
-
-Public static void game()
-{
-Int numOfPlayers = Players.size;
-
+  public static void game()
+  {
+    int numOfPlayers = Players.size;
+  }
 }
